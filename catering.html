@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catering &mdash; Fig & Filter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Fig & Filter home">
+      <div>
+        <span class="brand-name">Fig &amp; Filter</span>
+        <span class="brand-sub">Catering</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="catering.html" aria-current="page">Catering</a>
+      <a href="about.html">About</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="drawer-header">
+    <span class="brand-name">Fig & Filter</span>
+    <button class="close-nav" aria-label="Close menu" type="button">&times;</button>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="catering.html" aria-current="page">Catering</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html">Visit</a></li>
+  </ul>
+  <div class="divider"></div>
+</nav>
+
+<main id="main">
+  <div class="container">
+    <!-- Intro -->
+    <section class="cat-intro">
+      <span class="cat-eyebrow"><span class="ic">&#127849;</span>Freshly Baked &amp; Brewed Daily</span>
+      <h1>Morning catering for neighbourhood teams.</h1>
+      <p>Everything baked on site at dawn and filter carafes brewed straight from our roaster. Delivered hot and crisp to morning team standups, creative studios, and boardroom tables around Chalk Lane.</p>
+    </section>
+
+    <!-- Logistics rules -->
+    <section class="rules">
+      <div class="rules-head">
+        <span class="rules-icon">&#128197;</span>
+        <span class="rules-title">The Ordering Simple Rules</span>
+      </div>
+      <div class="rules-grid">
+        <div class="rule-item">
+          <span class="ic">&#128198;</span>
+          <div>
+            <span class="rule-name">Order by 2:00pm</span>
+            <span class="rule-note">The afternoon before your meeting.</span>
+          </div>
+        </div>
+        <div class="rule-item">
+          <span class="ic">&#127969;</span>
+          <div>
+            <span class="rule-name">Free delivery</span>
+            <span class="rule-note">Within 5km of 8 Chalk Lane.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- One photograph -->
+    <figure class="cat-figure" aria-hidden="true" style="position:relative;">
+      <img src="images/catering-spread.jpg" alt="A warm, artisanal morning catering spread laid out on a rustic timber board in a bright studio. Includes fresh golden laminated croissants, warm cinnamon fruit danishes, stainless steel filter coffee carafes, ceramic mugs, and delicate linen napkins. Warm morning natural sunlight, editorial aesthetic, deep purple and honey amber tones." width="900" height="600">
+      <div class="scrim" aria-hidden="true"></div>
+      <p>Straight from Mara&rsquo;s oven and Dev&rsquo;s roaster.</p>
+    </figure>
+
+    <!-- Packages -->
+    <section class="packages">
+      <div class="packages-head">
+        <h2>Select a package</h2>
+        <span class="min-note">Min 6 people</span>
+      </div>
+
+      <!-- Tier 1: The Coffee Run -->
+      <div class="package-card">
+        <div class="package-head">
+          <h3>The Coffee Run</h3>
+          <span class="package-tag">Quick Briefing</span>
+        </div>
+        <p class="package-desc">Perfect for quick morning updates, creative reviews, or team sprints.</p>
+        <div class="package-price">
+          <span class="price">$9</span><span class="per">/ person</span>
+        </div>
+        <div class="package-divider" aria-hidden="true"></div>
+        <ul class="package-list">
+          <li><span class="ic">&#10004;</span><span>Insulated carafe batch brew filter coffee</span></li>
+          <li><span class="ic">&#10004;</span><span>Compostable takeaway cups, stirrers &amp; lids</span></li>
+          <li><span class="ic">&#10004;</span><span>Whole milk &amp; creamy oat alternatives</span></li>
+          <li><span class="ic">&#10004;</span><span>Assorted fresh morning mini pastries (2 pp)</span></li>
+        </ul>
+        <div class="package-foot">
+          <span class="setup-tag"><span class="ic">&#128197;</span>Setup: Ready in 5 min</span>
+          <span class="setup-tag"><span class="ic">&#9749;</span>Carafe included</span>
+        </div>
+      </div>
+
+      <!-- Tier 2: The Morning Tea (featured) -->
+      <div class="package-card" style="position:relative;">
+        <span class="featured-badge">Neighbourhood Favourite</span>
+        <div class="package-head">
+          <h3>The Morning Tea</h3>
+          <span class="package-tag" style="background:var(--accent-amber-subtle); color:var(--on-secondary-container);">Standard</span>
+        </div>
+        <p class="package-desc">Generous, warm, and comforting for workshop mornings and client presentations.</p>
+        <div class="package-price">
+          <span class="price">$16</span><span class="per">/ person</span>
+        </div>
+        <div class="package-divider" style="background:var(--accent-amber-subtle);" aria-hidden="true"></div>
+        <ul class="package-list">
+          <li><span class="ic">&#10004;</span><span>House batch filter coffee &amp; boutique tea selection</span></li>
+          <li><span class="ic">&#10004;</span><span>Fresh flaky butter croissants</span></li>
+          <li><span class="ic">&#10004;</span><span>Seasonal fruit &amp; custard danishes</span></li>
+          <li><span class="ic">&#10004;</span><span>Toasted banana bread slices with whipped espresso butter</span></li>
+        </ul>
+        <div class="package-foot">
+          <span class="setup-tag">Dietary options available</span>
+          <span class="setup-tag"><span class="ic">&#10084;</span>House Special</span>
+        </div>
+      </div>
+
+      <!-- Tier 3: The Full Spread -->
+      <div class="package-card">
+        <div class="package-head">
+          <h3>The Full Spread</h3>
+          <span class="package-tag">Executive</span>
+        </div>
+        <p class="package-desc">A comprehensive breakfast banquet tailored for all-hands meetings and visiting partners.</p>
+        <div class="package-price">
+          <span class="price">$28</span><span class="per">/ person</span>
+        </div>
+        <div class="package-divider" aria-hidden="true"></div>
+        <ul class="package-list">
+          <li><span class="ic">&#10004;</span><span>Full coffee &amp; loose leaf tea urn service</span></li>
+          <li><span class="ic">&#10004;</span><span>Freshly pressed morning juice carafes (Orange &amp; Green)</span></li>
+          <li><span class="ic">&#10004;</span><span>Warm artisan breakfast brioche rolls &amp; savoury egg bites</span></li>
+          <li><span class="ic">&#10004;</span><span>Seasonal fruit skewers &amp; full morning bakery basket</span></li>
+        </ul>
+        <div class="package-foot">
+          <span class="setup-tag">Customizable mix</span>
+          <span class="setup-tag"><span class="ic">&#127345;</span>Savoury + Sweet</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estimator -->
+    <section class="estimator">
+      <div class="est-head">
+        <span class="est-icon">&#128200;</span>
+        <h3>Quick Cost Estimator</h3>
+        <span class="est-summary">10 guests &bull; The Morning Tea</span>
+      </div>
+      <div class="est-grid">
+        <div class="est-field">
+          <label>Selected Package</label>
+          <span style="font-size:13px; color:var(--on-surface);">The Morning Tea ($16 pp)</span>
+        </div>
+        <div class="est-field">
+          <label>Team Size</label>
+          <span style="font-size:13px; color:var(--on-surface);">10 people</span>
+        </div>
+      </div>
+      <div class="est-total">
+        <span class="label">Estimated Total (ex. tax)</span>
+        <span class="value">$160</span>
+      </div>
+    </section>
+
+    <!-- Primary CTA card -->
+    <section class="cta-card">
+      <span class="ic">&#9993;</span>
+      <h2>Ready for breakfast tomorrow?</h2>
+      <p>Hit the button below to draft an enquiry email directly to our catering desk. Let us know your package preference, headcount, delivery address, and date.</p>
+      <a href="mailto:catering@figandfilter.com?subject=Catering%20Enquiry%20-%20Fig%20%26%20Filter&amp;body=Hi%20Mara%20%26%20Dev%2C%0A%0AI&rsquo;d%20like%20to%20place%20a%20catering%20enquiry%20for%20our%20team%3A%0A%0A-%20Package%3A%20The%20Morning%20Tea%20(%2416%2Fperson)%0A-%20Number%20of%20people%3A%2010%0A-%20Delivery%20date%20%26%20time%3A%20%0A-%20Delivery%20address%3A%20%0A-%20Dietary%20notes%3A%20%0A%0AThank%20you!" class="btn-primary"><span class="ic">&#128224;</span>Order catering</a>
+      <div class="cta-meta">
+        <span>Direct: catering@figandfilter.com</span>
+        <span class="sep">&#8226;</span>
+        <span>Reply turnaround under 2 hours</span>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h3>Good to know</h3>
+      <details>
+        <summary>What if we have vegan, gluten-free, or dairy-free guests?<span class="ic">&#10140;</span></summary>
+        <p>We clearly label all individual boxes. Gluten-free and vegan pastries are baked in a dedicated tray each morning. Just note your dietary numbers in your email.</p>
+      </details>
+      <details>
+        <summary>Do we need to return the coffee carafes?<span class="ic">&#10140;</span></summary>
+        <p>Yes, our thermal carafes stay piping hot for 4 hours. We arrange an afternoon pickup between 2:00pm and 4:30pm, or you can drop them back to 8 Chalk Lane next morning.</p>
+      </details>
+      <details>
+        <summary>Can we order for small teams under 6 people?<span class="ic">&#10140;</span></summary>
+        <p>Our delivery packages have a 6-person minimum to cover courier logistics. For smaller groups, you are welcome to pick up boxes directly at the caf&eacute; counter via our regular <a href="menu.html">caf&eacute; menu</a>.</p>
+      </details>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-brand">Fig &amp; Filter</span>
+    <span class="footer-tagline">Roasted here. Baked here. Poured for you.</span>
+    <div class="footer-div" aria-hidden="true"></div>
+    <div class="footer-block">
+      <span class="foot-label">Hours</span>
+      <p>Tuesday &ndash; Sunday: 7:30am &ndash; 5:00pm</p>
+      <p>Monday: Closed</p>
+    </div>
+    <div class="footer-block">
+      <span class="foot-label">Location &amp; Contact</span>
+      <p>8 Chalk Lane</p>
+      <p><a href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></p>
+    </div>
+    <div class="footer-block footer-catering">
+      <a href="catering.html" class="btn-footer">Order catering</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('mobile-nav');
+  var overlay = document.getElementById('nav-overlay');
+  var close = document.querySelector('.close-nav');
+  var links = nav.querySelectorAll('a');
+  function openNav(){
+    btn.setAttribute('aria-expanded','true');
+    nav.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav(){
+    btn.setAttribute('aria-expanded','false');
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  btn.addEventListener('click', openNav);
+  close.addEventListener('click', closeNav);
+  overlay.addEventListener('click', closeNav);
+  links.forEach(function(link){ link.addEventListener('click', closeNav); });
+})();
+</script>
+</body>
+</html>

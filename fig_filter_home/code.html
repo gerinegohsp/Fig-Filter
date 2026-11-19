@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Fig &amp; Filter</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#98a66f", "on-surface": "#1e1b1c", "on-secondary-container": "#755100", "bg-canvas": "#FAF6F0", "tertiary-fixed": "#dbe9ac", "surface-dim": "#e1d8d9", "secondary-fixed-dim": "#f5bd58", "outline": "#7e747c", "surface-variant": "#e9e0e1", "on-tertiary-fixed": "#161f00", "on-secondary": "#ffffff", "on-background": "#1e1b1c", "surface-container-low": "#fbf1f2", "inverse-on-surface": "#f8eeef", "primary-fixed-dim": "#e3b9e3", "background": "#fff8f8", "primary": "#331736", "surface-tint": "#755377", "primary-fixed": "#ffd6fe", "error-container": "#ffdad6", "tertiary-fixed-dim": "#bfcd92", "secondary-fixed": "#ffdeaa", "surface-container-lowest": "#ffffff", "inverse-primary": "#e3b9e3", "error": "#ba1a1a", "inverse-surface": "#342f30", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-error": "#ffffff", "surface-container": "#f5eced", "surface-container-highest": "#e9e0e1", "secondary": "#7d5700", "primary-container": "#4a2c4d", "on-primary": "#ffffff", "accent-amber-subtle": "#F7EBD3", "on-surface-variant": "#4d444b", "tertiary-container": "#303b0f", "on-secondary-fixed-variant": "#5f4100", "on-tertiary-fixed-variant": "#404b1e", "on-primary-fixed-variant": "#5b3c5e", "surface-container-high": "#efe6e7", "on-secondary-fixed": "#271900", "outline-variant": "#cfc3cc", "surface-card": "#FFFFFF", "surface-bright": "#fff8f8", "surface": "#fff8f8", "on-primary-container": "#ba94bb", "text-muted": "#6E6663", "secondary-container": "#ffc55f", "border-subtle": "#E5DCce", "tertiary": "#1b2500", "on-primary-fixed": "#2c1030" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "space-2xl": "4rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "label-md": ["DM Sans"], "body-md": ["DM Sans"], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "body-lg": ["DM Sans"], "label-sm": ["DM Sans"], "body-sm": ["DM Sans"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "700" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-canvas text-on-surface font-body-md text-body-md min-h-full flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-bg-canvas/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(74,44,77,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Fig &amp; Filter Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrCka-gPDob2wStrOil26Wo4XHZBTcGHXW10g8q1OTlVItECJfZZM_neAQJfg071gwabVqg3c3Yh1gzB3xs55ZEnIfHpoR94CFWsOtLx3K-0TWi3Wyc2ZgWHb6lfbD6s4rzKfayWwX7ixr2F_M7f4XA7b8OCvlnuvtqLsADGuaQLxCUmoR1u-Y7hYaW6GTkKCQzupv8h1hmAMiytWsjmG8oVI-Y4aHO0GMS97tsMDQog"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary-container truncate tracking-tight">Fig &amp; Filter</span><span class="font-label-sm text-label-sm text-text-muted truncate">Home</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-bg-canvas pt-16 pb-28"><div class="flex flex-col w-full">
+<!-- Immediate Operational Context Bar (Strictly Above the Fold on Mobile) -->
+<section class="px-margin pt-space-xs pb-space-sm bg-bg-canvas">
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">8 Chalk Lane</p>
+<p class="font-body-sm text-body-sm text-text-muted">Corner of Weaver Street</p>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 text-right">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-accent-amber-subtle text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-[11px] uppercase tracking-wider">Open Today</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface mt-1">7:30am – 5:00pm</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-text-muted">
+<span class="font-body-sm text-[13px]">Tuesday – Sunday service</span>
+<span class="font-body-sm text-[13px] text-text-muted/80">Monday rest</span>
+</div>
+</div>
+</section>
+<!-- Evocative Hero Banner with Photography & Scrim -->
+<section class="px-margin my-space-xs">
+<div class="relative w-full h-[320px] rounded-xl overflow-hidden shadow-md flex flex-col justify-end p-space-lg text-on-primary">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Close up artisanal shot of rich dark velvet espresso pouring steadily from an authentic chrome portafilter into a speckled earthen ceramic cup, forming a glistening hazelnut and golden crema layer, morning sunlight cascading through the cafe window with soft ambient warmth, palette deep fig purple and warm amber accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7xDbZi69xZCWkCIdH-jJJwD3hWZdhPcq1nsBtBqAzZcjtZMBiV1tdm-B0CwWM7xtHm0skASWQybHjmpWMVZcZ-xkrIJRvXlzqboblMTKb_M2fAu2-Tjxcn7sOc2Md7Whr8YE5mOkE2_SQs-BGA1pfqfCNGYgpZg6IQuFzGntyaGgvJD110l-9I0MiYOKB-dbHqgQLP36D1K4FNhli5jZl4qRgoUoKPKr1C_Ehoy8')">
+</div>
+<!-- Dual Scrim for Editorial Contrast & Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+<div class="relative z-10 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-space-xs">Neighbourhood Roastery &amp; Bakery</span>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-inverse-on-surface tracking-tight leading-none mb-space-xs">
+          Fig &amp; Filter
+        </h1>
+<p class="font-headline-sm text-headline-sm text-primary-fixed-dim italic font-normal leading-snug max-w-[280px]">
+          Roasted here. Baked here. Poured for you.
+        </p>
+</div>
+</div>
+</section>
+<!-- Primary Conversion & Secondary Navigation Actions -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col items-center gap-space-md">
+<!-- Exactly One Primary CTA -->
+<a class="w-full h-12 bg-primary-container text-bg-canvas hover:bg-primary rounded-lg flex items-center justify-center gap-space-sm font-label-md text-label-md transition-colors shadow-sm active:scale-[0.99]" data-path="visit" href="#">
+<span>Find us</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Secondary Plain Text Link -->
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-on-surface hover:text-primary transition-colors pb-0.5 border-b-2 border-secondary/60 hover:border-secondary" data-path="menu" href="#">
+<span>View full menu</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_right_alt</span>
+</a>
+</section>
+<!-- Editorial Invitation & Three Reasons to Visit -->
+<section class="px-margin pt-space-lg pb-space-sm">
+<div class="flex flex-col mb-space-md">
+<div class="flex items-center gap-2 mb-1">
+<span class="h-px w-5 bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Why we wake early</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+        Three simple promises
+      </h2>
+</div>
+<!-- Structured Reason Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- Reason 1 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[24px]">coffee</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-0.5">
+            We roast our own
+          </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Small batch beans roasted twice a week right here on site behind the counter.
+          </p>
+</div>
+</div>
+<!-- Reason 2 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[24px]">bakery_dining</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-0.5">
+            The kitchen bakes everything daily
+          </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Fresh from the oven every morning starting before dawn. Nothing shipped in, nothing from yesterday.
+          </p>
+</div>
+</div>
+<!-- Reason 3 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[24px]">deck</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-0.5">
+            Stay as long as you like
+          </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Settle in with a book, conversation, or a warm cup in our sunlit fig courtyard.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Courtyard Ambience Peek -->
+<section class="px-margin pt-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">park</span>
+<span class="font-label-md text-label-md text-on-surface">The Courtyard Fig</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Est. 2 years</span>
+</div>
+<div class="w-full h-36 rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Quiet cobblestone courtyard garden behind an artisanal cafe, leafy mature fig tree spreading shade across timber cafe tables, patrons quietly reading books with steaming ceramic mugs, soft gentle morning light and warm earthy tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRn7M3mNYgCNEp8RIrBqG4wRaI8_q1VL7iC3-UdlThB1eiZAK1KB7TrvFOBSKgu93tIB2DTV7pqfTUPdhOPZnHTVijr5uWKajLdgM2RgeOcXLr1h-3CGksUh9hp9WXeI_cLlRO4U9d4m4Rmg1nLx7lObS1zRwZcEGoEVTWzKyPDkkPwrhAgFnKu7f2YanEXDeiGt27zwcJUkFSuxLu6xub07y2gitdtmiCGHAkSBU')">
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted italic text-center pt-1">
+        “Named after the courtyard tree that keeps the morning sun gentle.”
+      </p>
+</div>
+</section>
+</div><footer class="w-full bg-primary-container text-on-primary px-margin py-space-xl mt-space-2xl"><div class="max-w-md mx-auto flex flex-col items-center text-center"><span class="font-headline-md text-headline-md text-secondary-fixed mb-space-xs">Fig &amp; Filter</span><p class="font-body-sm text-body-sm text-primary-fixed-dim italic mb-space-lg">Roasted here. Baked here. Poured for you.</p><div class="w-12 h-0.5 bg-secondary-fixed-dim/30 mb-space-lg rounded-full"></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Hours</p><p class="font-body-sm text-body-sm text-surface-container-low">Tuesday – Sunday: 7:30am – 5:00pm</p><p class="font-body-sm text-body-sm text-on-primary-container">Monday: Closed</p></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Location &amp; Contact</p><p class="font-body-sm text-body-sm text-surface-container-low">8 Chalk Lane</p><a class="inline-block font-body-sm text-body-sm text-secondary-fixed hover:underline" href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></div><div class="pt-space-xs"><a class="inline-flex items-center justify-center min-h-[44px] px-space-lg py-space-sm bg-secondary text-on-secondary font-label-md text-label-md rounded shadow-sm hover:bg-on-secondary-container transition-colors" data-path="catering" href="#">Order catering</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-bg-canvas/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(74,44,77,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="catering" href="#"><span class="material-symbols-outlined text-[20px]">bakery_dining</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Catering</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">About</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="visit" href="#"><span class="material-symbols-outlined text-[20px]">distance</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Visit</span></a></div></nav></body></html>

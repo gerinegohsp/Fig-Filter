@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Fig &amp; Filter</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#98a66f", "on-surface": "#1e1b1c", "on-secondary-container": "#755100", "bg-canvas": "#FAF6F0", "tertiary-fixed": "#dbe9ac", "surface-dim": "#e1d8d9", "secondary-fixed-dim": "#f5bd58", "outline": "#7e747c", "surface-variant": "#e9e0e1", "on-tertiary-fixed": "#161f00", "on-secondary": "#ffffff", "on-background": "#1e1b1c", "surface-container-low": "#fbf1f2", "inverse-on-surface": "#f8eeef", "primary-fixed-dim": "#e3b9e3", "background": "#fff8f8", "primary": "#331736", "surface-tint": "#755377", "primary-fixed": "#ffd6fe", "error-container": "#ffdad6", "tertiary-fixed-dim": "#bfcd92", "secondary-fixed": "#ffdeaa", "surface-container-lowest": "#ffffff", "inverse-primary": "#e3b9e3", "error": "#ba1a1a", "inverse-surface": "#342f30", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-error": "#ffffff", "surface-container": "#f5eced", "surface-container-highest": "#e9e0e1", "secondary": "#7d5700", "primary-container": "#4a2c4d", "on-primary": "#ffffff", "accent-amber-subtle": "#F7EBD3", "on-surface-variant": "#4d444b", "tertiary-container": "#303b0f", "on-secondary-fixed-variant": "#5f4100", "on-tertiary-fixed-variant": "#404b1e", "on-primary-fixed-variant": "#5b3c5e", "surface-container-high": "#efe6e7", "on-secondary-fixed": "#271900", "outline-variant": "#cfc3cc", "surface-card": "#FFFFFF", "surface-bright": "#fff8f8", "surface": "#fff8f8", "on-primary-container": "#ba94bb", "text-muted": "#6E6663", "secondary-container": "#ffc55f", "border-subtle": "#E5DCce", "tertiary": "#1b2500", "on-primary-fixed": "#2c1030" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "space-2xl": "4rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "label-md": ["DM Sans"], "body-md": ["DM Sans"], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "body-lg": ["DM Sans"], "label-sm": ["DM Sans"], "body-sm": ["DM Sans"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "700" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-canvas text-on-surface font-body-md text-body-md min-h-full flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-bg-canvas/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(74,44,77,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Fig &amp; Filter Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrCka-gPDob2wStrOil26Wo4XHZBTcGHXW10g8q1OTlVItECJfZZM_neAQJfg071gwabVqg3c3Yh1gzB3xs55ZEnIfHpoR94CFWsOtLx3K-0TWi3Wyc2ZgWHb6lfbD6s4rzKfayWwX7ixr2F_M7f4XA7b8OCvlnuvtqLsADGuaQLxCUmoR1u-Y7hYaW6GTkKCQzupv8h1hmAMiytWsjmG8oVI-Y4aHO0GMS97tsMDQog"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary-container truncate tracking-tight">Fig &amp; Filter</span><span class="font-label-sm text-label-sm text-text-muted truncate">Visit</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-bg-canvas pt-16 pb-28"><div class="flex flex-col w-full">
+<div class="w-full max-w-xl mx-auto px-margin pt-space-sm pb-space-2xl">
+<!-- IMMEDIATE VALUE SECTION (Zero-scroll Fold Guarantee) -->
+<section class="w-full mb-space-lg">
+<!-- Address & Live Status Pill -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm mb-space-sm">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-accent-amber-subtle text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span id="live-status-pill">Open today • Closes 5pm</span>
+</span>
+<span class="font-label-sm text-label-sm text-text-muted">Chalk Lane</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container tracking-tight mb-1">
+          8 Chalk Lane
+        </h1>
+<p class="font-body-md text-body-md text-on-surface mb-space-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">pin_drop</span>
+          Corner of Weaver Street
+        </p>
+<!-- EXACTLY ONE PRIMARY CTA BUTTON ON PAGE -->
+<a class="w-full min-h-[46px] inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm active:scale-[0.99] transition-transform" href="https://maps.google.com/?q=8+Chalk+Lane" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[19px]">directions</span>
+          Get directions
+        </a>
+</div>
+<!-- Opening Hours Structured Table -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary-container flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+            Weekly Hours
+          </h2>
+<span class="font-label-sm text-label-sm text-text-muted">Roasting &amp; Kitchen on-site</span>
+</div>
+<div class="space-y-1.5">
+<!-- Mon -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-bg-canvas/50" id="row-mon">
+<span class="font-label-md text-label-md text-text-muted">Monday</span>
+<span class="font-label-md text-label-md text-text-muted italic">Closed (Bake &amp; Rest)</span>
+</div>
+<!-- Tue - Fri -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-bg-canvas" id="row-tue-fri">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface">Tuesday – Friday</span>
+<span class="hidden text-[10px] font-label-sm tracking-wider uppercase bg-secondary-container text-on-secondary-fixed px-1.5 py-0.5 rounded" id="badge-weekday">Today</span>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold">7:30am – 5:00pm</span>
+</div>
+<!-- Sat - Sun -->
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-bg-canvas" id="row-weekend">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface">Saturday – Sunday</span>
+<span class="hidden text-[10px] font-label-sm tracking-wider uppercase bg-secondary-container text-on-secondary-fixed px-1.5 py-0.5 rounded" id="badge-weekend">Today</span>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold">8:00am – 5:00pm</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-sm pt-space-xs text-center">
+          Warm pastries out of the oven by 7:45am. Filter bar running all day.
+        </p>
+</div>
+</section>
+<!-- SHOPFRONT & COURTYARD PHOTOGRAPH -->
+<section class="w-full mb-space-xl">
+<div class="overflow-hidden rounded-xl bg-surface-container shadow-sm">
+<img class="w-full h-52 object-cover" data-alt="Warm and inviting corner shopfront of Fig and Filter cafe at 8 Chalk Lane, showcasing rustic brickwork, deep plum painted timber facade, outdoor cedar bench seating with ceramic coffee mugs, and an arched sunlit courtyard entrance framed by lush leafy potted fig trees. Soft natural morning light, editorial artisanal café aesthetic with rich tactile textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2aiWwQ19X0bnLDcTGTmz7n69rbz-Z9nzreDwyGuoR0HZ77Vdjbj-ksVeOcTsangylA7BUJ2uv0IGFLUbCNMyfz67P8L_I3rFvL0At5QXjZDFAfE7hImUze06HxVNLK56J-aHwbttR27DFkDCNeS2HDQeUOSQ2OmrUX8PbD7vAPoMl2MQ9Q-56ZwybdtFy5QcVyg8F15PrUZtnLBL9iSyiqwrocBX2MzQUmuSr8zc"/>
+<div class="p-space-sm bg-surface-card flex items-center justify-between text-text-muted">
+<span class="font-body-sm text-body-sm italic">Corner of Weaver Street &amp; the shaded fig courtyard</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">deck</span>
+            Courtyard open
+          </span>
+</div>
+</div>
+</section>
+<!-- HOW TO FIND US -->
+<section class="w-full bg-surface-card rounded-xl p-space-md shadow-sm mb-space-lg">
+<h2 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+        How to find us
+      </h2>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+        We are tucked quietly just off Weaver Street in the historic picture-framing quarter. Look for our deep plum timber awning and the green fig tree shading the courtyard gate.
+      </p>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm p-3 rounded-lg bg-bg-canvas">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5">tram</span>
+<div>
+<h3 class="font-label-md text-label-md text-primary-container">Transit options</h3>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-primary">3-minute walk</strong> from the Chalk Lane tram stop.
+            </p>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">
+<strong class="font-semibold text-on-surface">8-minute walk</strong> uphill from Central Station through Weaver Reserve.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-3 rounded-lg bg-bg-canvas">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5">local_parking</span>
+<div>
+<h3 class="font-label-md text-label-md text-primary-container">Parking &amp; Bicycles</h3>
+<p class="font-body-sm text-body-sm text-on-surface">
+              1-hour ticketed street parking is available along Weaver Street.
+            </p>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">
+              Free stainless steel bike racks sit directly outside our front entrance courtyard.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE MAP PREVIEW CARD -->
+<section class="w-full rounded-xl overflow-hidden shadow-sm bg-surface-card mb-space-lg">
+<div class="w-full h-44 bg-surface-container flex items-end justify-start p-space-sm" data-location="8 Chalk Lane, corner of Weaver Street" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7CWFyesyKc4DpIMnYaV8oyQrVphBTfXahEC82FOBmArXQiXzk5xgfCm_M_u8DVutfFTgx1J6Oi3QSLPrl1xYvN1dLZU_J9S8NsHerA2n-JU09-YRWOP2yozjOFq7GtwVY1KiaNVnB7jODguIAW0k2vJeO6zkaWF_KiNQxqLF5duRTqRn8CEvfjY4EhKqY-QeOuJEiwRJw7NcaaWsooryu8piOAHxa2flQFf8bECM')">
+<div class="bg-bg-canvas/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">place</span>
+<span class="font-label-sm text-label-sm text-primary-container">8 Chalk Lane • Corner Weaver St</span>
+</div>
+</div>
+</section>
+<!-- CONTACT DETAILS -->
+<section class="w-full bg-surface-card rounded-xl p-space-md shadow-sm mb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">
+        Get in touch
+      </h2>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+        Drop by our counter, give us a quick ring before you walk up, or shoot us a note.
+      </p>
+<div class="space-y-2.5">
+<a class="flex items-center justify-between p-3 rounded-lg bg-bg-canvas text-on-surface hover:bg-surface-variant transition-colors" href="tel:0294821104">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+<span class="font-label-md text-label-md">(02) 9482 1104</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted underline decoration-secondary">Call café</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-lg bg-bg-canvas text-on-surface hover:bg-surface-variant transition-colors" href="mailto:hello@figandfilter.com">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">mail</span>
+<span class="font-label-md text-label-md truncate">hello@figandfilter.com</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted underline decoration-secondary">Email</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function() {
+    const today = new Date().getDay(); // 0 is Sunday, 1 is Monday, etc.
+    const statusPill = document.getElementById('live-status-pill');
+    const badgeWeekday = document.getElementById('badge-weekday');
+    const badgeWeekend = document.getElementById('badge-weekend');
+    const rowMon = document.getElementById('row-mon');
+    const rowWeekday = document.getElementById('row-tue-fri');
+    const rowWeekend = document.getElementById('row-weekend');
+
+    if (today === 1) { // Monday
+      if (statusPill) statusPill.textContent = 'Closed today • Reopens Tuesday 7:30am';
+      if (rowMon) {
+        rowMon.classList.remove('bg-bg-canvas/50');
+        rowMon.classList.add('bg-accent-amber-subtle');
+      }
+    } else if (today >= 2 && today <= 5) { // Tue - Fri
+      if (badgeWeekday) badgeWeekday.classList.remove('hidden');
+      if (rowWeekday) rowWeekday.classList.add('bg-accent-amber-subtle');
+      if (statusPill) statusPill.textContent = 'Open today • 7:30am – 5:00pm';
+    } else { // Sat (6) or Sun (0)
+      if (badgeWeekend) badgeWeekend.classList.remove('hidden');
+      if (rowWeekend) rowWeekend.classList.add('bg-accent-amber-subtle');
+      if (statusPill) statusPill.textContent = 'Open today • 8:00am – 5:00pm';
+    }
+  })();
+</script><footer class="w-full bg-primary-container text-on-primary px-margin py-space-xl mt-space-2xl"><div class="max-w-md mx-auto flex flex-col items-center text-center"><span class="font-headline-md text-headline-md text-secondary-fixed mb-space-xs">Fig &amp; Filter</span><p class="font-body-sm text-body-sm text-primary-fixed-dim italic mb-space-lg">Roasted here. Baked here. Poured for you.</p><div class="w-12 h-0.5 bg-secondary-fixed-dim/30 mb-space-lg rounded-full"></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Hours</p><p class="font-body-sm text-body-sm text-surface-container-low">Tuesday – Sunday: 7:30am – 5:00pm</p><p class="font-body-sm text-body-sm text-on-primary-container">Monday: Closed</p></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Location &amp; Contact</p><p class="font-body-sm text-body-sm text-surface-container-low">8 Chalk Lane</p><a class="inline-block font-body-sm text-body-sm text-secondary-fixed hover:underline" href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></div><div class="pt-space-xs"><a class="inline-flex items-center justify-center min-h-[44px] px-space-lg py-space-sm bg-secondary text-on-secondary font-label-md text-label-md rounded shadow-sm hover:bg-on-secondary-container transition-colors" data-path="catering" href="#">Order catering</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-bg-canvas/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(74,44,77,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="catering" href="#"><span class="material-symbols-outlined text-[20px]">bakery_dining</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Catering</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">About</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="visit" href="#"><span class="material-symbols-outlined text-[20px]">distance</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Visit</span></a></div></nav></body></html>

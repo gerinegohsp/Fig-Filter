@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit &mdash; Fig & Filter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Fig & Filter home">
+      <div>
+        <span class="brand-name">Fig &amp; Filter</span>
+        <span class="brand-sub">Visit</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="catering.html">Catering</a>
+      <a href="about.html">About</a>
+      <a href="visit.html" aria-current="page">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="drawer-header">
+    <span class="brand-name">Fig & Filter</span>
+    <button class="close-nav" aria-label="Close menu" type="button">&times;</button>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="catering.html">Catering</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html" aria-current="page">Visit</a></li>
+  </ul>
+  <div class="divider"></div>
+</nav>
+
+<main id="main">
+  <div class="container">
+    <!-- Immediate value section -->
+    <section>
+      <div class="card">
+        <div class="op-row">
+          <span class="inline-flex" style="align-items:center; gap:0.5rem; padding:0.25rem 1rem; background:var(--accent-amber-subtle); color:var(--on-secondary-container); font-family:'DM Sans',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; border-radius:999px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--secondary); display:inline-block; animation:pulse 2s infinite;" aria-hidden="true"></span>
+            <span id="live-status-pill">Open today &bull; Closes 5pm</span>
+          </span>
+          <span style="font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--text-muted);">Chalk Lane</span>
+        </div>
+        <h1 style="font-size:26px; margin:0.75rem 0 0.25rem;">8 Chalk Lane</h1>
+        <p style="font-size:16px; color:var(--on-surface); margin:0; display:flex; align-items:center; gap:0.5rem;">
+          <span style="color:var(--secondary); font-size:18px;">&#128205;</span>
+          Corner of Weaver Street
+        </p>
+        <a href="https://maps.google.com/?q=8+Chalk+Lane" rel="noopener noreferrer" target="_blank" class="btn-primary" style="margin-top:1rem; width:100%;"><span style="color:var(--secondary); font-size:19px; margin-right:0.5rem;">&#128668;</span>Get directions</a>
+      </div>
+
+      <!-- Weekly hours -->
+      <div class="card" style="margin-top:1rem;">
+        <div class="section-head" style="margin-bottom:0.75rem;">
+          <span class="op-icon" style="font-size:20px; color:var(--primary);">&#128197;</span>
+          <h2 style="font-size:18px; margin:0;">Weekly Hours</h2>
+        </div>
+        <span style="font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--text-muted); margin-bottom:0.75rem; display:block;">Roasting &amp; Kitchen on-site</span>
+        <div class="space-y" style="display:flex; flex-direction:column; gap:0.25rem;">
+          <div id="row-mon" style="padding:0.6rem; border-radius:var(--radius); background:rgba(250,246,240,0.3); display:flex; align-items:center; justify-content:space-between;">
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--text-muted);">Monday</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--text-muted); font-style:italic;">Closed (Bake &amp; Rest)</span>
+          </div>
+          <div id="row-tue-fri" style="padding:0.6rem; border-radius:var(--radius); background:#fff; display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--on-surface);">Tuesday &ndash; Friday</span>
+              <span id="badge-weekday" style="font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;background:var(--primary-container);color:#fff; padding:0.15rem 0.5rem; border-radius:var(--radius); display:none;">Today</span>
+            </div>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--primary-container);">7:30am &ndash; 5:00pm</span>
+          </div>
+          <div id="row-weekend" style="padding:0.6rem; border-radius:var(--radius); background:#fff; display:flex; align-items:center; justify-content:space-between;">
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--on-surface);">Saturday &ndash; Sunday</span>
+              <span id="badge-weekend" style="font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;background:var(--primary-container);color:#fff; padding:0.15rem 0.5rem; border-radius:var(--radius); display:none;">Today</span>
+            </div>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--primary-container);">8:00am &ndash; 5:00pm</span>
+          </div>
+        </div>
+        <p style="font-size:13px; color:var(--text-muted); margin-top:0.75rem; text-align:center;">Warm pastries out of the oven by 7:45am. Filter bar running all day.</p>
+      </div>
+    </section>
+
+    <!-- Shopfront & courtyard photograph -->
+    <section>
+      <div class="card" style="overflow:hidden;">
+        <img src="images/shopfront.jpg" alt="Warm and inviting corner shopfront of Fig and Filter cafe at 8 Chalk Lane, showcasing rustic brickwork, deep plum painted timber facade, outdoor cedar bench seating with ceramic coffee mugs, and an arched sunlit courtyard entrance framed by lush leafy potted fig trees. Soft natural morning light, editorial artisanal caf&eacute; aesthetic with rich tactile textures." width="900" height="600">
+        <div style="padding:0.5rem; display:flex; align-items:center; justify-content:space-between; font-size:13px; color:var(--text-muted);">
+          <span style="font-style:italic;">Corner of Weaver Street &amp; the shaded fig courtyard</span>
+          <span class="inline-flex" style="align-items:center; gap:0.3rem; color:var(--secondary); font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600;">
+            <span style="font-size:16px;">&#128204;</span>Courtyard open
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to find us -->
+    <section>
+      <div class="section-head">
+        <span class="op-icon" style="font-size:20px; color:var(--secondary);">&#128214;</span>
+        <h2 style="font-size:18px; margin:0;">How to find us</h2>
+      </div>
+      <p style="font-size:16px; color:var(--on-surface); margin-bottom:1rem;">We are tucked quietly just off Weaver Street in the historic picture-framing quarter. Look for our deep plum timber awning and the green fig tree shading the courtyard gate.</p>
+      <div class="space-y" style="display:flex; flex-direction:column; gap:0.75rem;">
+        <div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.75rem; border-radius:var(--radius); background:rgba(250,246,240,0.6);">
+          <span style="color:var(--primary-container); font-size:20px; flex-shrink:0; margin-top:2px;">&#128659;</span>
+          <div>
+            <h3 style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--primary-container); margin:0 0 0.25rem;">Transit options</h3>
+            <p style="font-size:14px; color:var(--on-surface); margin:0 0 0.4rem;"><strong style="color:var(--primary-container);">3-minute walk</strong> from the Chalk Lane tram stop.</p>
+            <p style="font-size:13px; color:var(--text-muted); margin:0;"><strong>8-minute walk</strong> uphill from Central Station through Weaver Reserve.</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.75rem; border-radius:var(--radius); background:rgba(250,246,240,0.6);">
+          <span style="color:var(--primary-container); font-size:20px; flex-shrink:0; margin-top:2px;">&#128213;</span>
+          <div>
+            <h3 style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--primary-container); margin:0 0 0.25rem;">Parking &amp; Bicycles</h3>
+            <p style="font-size:14px; color:var(--on-surface); margin:0 0 0.4rem;">1-hour ticketed street parking is available along Weaver Street.</p>
+            <p style="font-size:13px; color:var(--text-muted); margin:0;">Free stainless steel bike racks sit directly outside our front entrance courtyard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map preview card -->
+    <section style="margin-top:1rem;">
+      <div class="card" style="height:160px; border-radius:var(--radius-lg); overflow:hidden; position:relative; background:var(--surface-container);">
+        <div style="position:absolute; inset:0; background:url('images/shopfront.jpg') center/cover no-repeat; opacity:0.55;"></div>
+        <div style="position:absolute; bottom:0.75rem; left:0.75rem; background:rgba(250,246,240,0.9); backdrop-filter:blur(6px); padding:0.4rem 0.9rem; border-radius:var(--radius); box-shadow:0 2px 8px -2px rgba(0,0,0,0.1); display:flex; align-items:center; gap:0.4rem;">
+          <span style="color:var(--primary-container); font-size:18px;">&#127968;</span>
+          <span style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--primary-container);">8 Chalk Lane &bull; Corner Weaver St</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact details -->
+    <section style="margin-top:1rem;">
+      <div class="section-head">
+        <h2 style="font-size:18px; margin:0;">Get in touch</h2>
+      </div>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:1rem;">Drop by our counter, give us a quick ring before you walk up, or shoot us a note.</p>
+      <div class="space-y" style="display:flex; flex-direction:column; gap:0.5rem;">
+        <a href="tel:0294821104" class="card" style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem; text-decoration:none; color:inherit;">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span style="color:var(--primary-container); font-size:20px;">&#128222;</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--on-surface);">(02) 9482 1104</span>
+          </div>
+          <span style="font-size:13px; color:var(--text-muted); text-decoration:underline; text-decoration-color:#D9A441; text-underline-offset:2px;">Call caf&eacute;</span>
+        </a>
+        <a href="mailto:hello@figandfilter.com" class="card" style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem; text-decoration:none; color:inherit;">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span style="color:var(--primary-container); font-size:20px;">&#9993;</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--on-surface);">hello@figandfilter.com</span>
+          </div>
+          <span style="font-size:13px; color:var(--text-muted); text-decoration:underline; text-decoration-color:#D9A441; text-underline-offset:2px;">Email</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-brand">Fig &amp; Filter</span>
+    <span class="footer-tagline">Roasted here. Baked here. Poured for you.</span>
+    <div class="footer-div" aria-hidden="true"></div>
+    <div class="footer-block">
+      <span class="foot-label">Hours</span>
+      <p>Tuesday &ndash; Sunday: 7:30am &ndash; 5:00pm</p>
+      <p>Monday: Closed</p>
+    </div>
+    <div class="footer-block">
+      <span class="foot-label">Location &amp; Contact</span>
+      <p>8 Chalk Lane</p>
+      <p><a href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></p>
+    </div>
+    <div class="footer-block footer-catering">
+      <a href="catering.html" class="btn-footer">Order catering</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('mobile-nav');
+  var overlay = document.getElementById('nav-overlay');
+  var close = document.querySelector('.close-nav');
+  var links = nav.querySelectorAll('a');
+  function openNav(){
+    btn.setAttribute('aria-expanded','true');
+    nav.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav(){
+    btn.setAttribute('aria-expanded','false');
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  btn.addEventListener('click', openNav);
+  close.addEventListener('click', closeNav);
+  overlay.addEventListener('click', closeNav);
+  links.forEach(function(link){ link.addEventListener('click', closeNav); });
+})();
+</script>
+</body>
+</html>

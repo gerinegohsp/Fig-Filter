@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fig & Filter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Fig & Filter home">
+      <div>
+        <span class="brand-name">Fig &amp; Filter</span>
+        <span class="brand-sub">Home</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="catering.html">Catering</a>
+      <a href="about.html">About</a>
+      <a href="visit.html" aria-current="page">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="drawer-header">
+    <span class="brand-name">Fig & Filter</span>
+    <button class="close-nav" aria-label="Close menu" type="button">&times;</button>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="catering.html">Catering</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="visit.html" aria-current="page">Visit</a></li>
+  </ul>
+  <div class="divider"></div>
+</nav>
+
+<main id="main">
+  <div class="container">
+    <!-- Operational context bar (above the fold) -->
+    <section class="op-bar">
+      <div class="op-row">
+        <div class="op-contact">
+          <span class="op-icon">&#127968;</span>
+          <div>
+            <span class="addr">8 Chalk Lane</span>
+            <span class="addr-note">Corner of Weaver Street</span>
+          </div>
+        </div>
+        <div class="op-status">
+          <span class="status-pill"><span class="dot" aria-hidden="true"></span>Open Today</span>
+          <span class="op-hours">7:30am &ndash; 5:00pm</span>
+        </div>
+      </div>
+      <div class="op-service">
+        <span>Tuesday &ndash; Sunday service</span>
+        <span>&middot;</span>
+        <span>Monday rest</span>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero-img" src="images/hero-espresso-pour.jpg" alt="Close up artisanal shot of rich dark velvet espresso pouring steadily from an authentic chrome portafilter into a speckled earthen ceramic cup, forming a glistening hazelnut and golden crema layer, morning sunlight cascading through the cafe window with soft ambient warmth, palette deep fig purple and warm amber accents." width="900" height="600">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Neighbourhood Roastery &amp; Bakery</span>
+        <h1>Fig &amp; Filter</h1>
+        <p class="subtitle">Roasted here. Baked here. Poured for you.</p>
+      </div>
+    </section>
+
+    <!-- Primary CTA + secondary nav -->
+    <section class="cta-section text-center">
+      <a href="visit.html" class="btn-primary">Find us <span aria-hidden="true">&rarr;</span></a>
+      <a href="menu.html" class="link-text">View full menu <span aria-hidden="true">&rarr;</span></a>
+    </section>
+
+    <!-- Three simple promises -->
+    <section>
+      <div class="section-head">
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Why we wake early</span>
+        <h2>Three simple promises</h2>
+      </div>
+      <div class="promise-list">
+        <div class="promise-item">
+          <span class="icon">&#9733;</span>
+          <div>
+            <h3>We roast our own</h3>
+            <p>Small batch beans roasted twice a week right here on site behind the counter.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <span class="icon">&#9912;</span>
+          <div>
+            <h3>The kitchen bakes everything daily</h3>
+            <p>Fresh from the oven every morning starting before dawn. Nothing shipped in, nothing from yesterday.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <span class="icon">&#127968;</span>
+          <div>
+            <h3>Stay as long as you like</h3>
+            <p>Settle in with a book, conversation, or a warm cup in our sunlit fig courtyard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courtyard ambience peek -->
+    <section>
+      <div class="court-peek">
+        <div class="court-label">
+          <span class="op-icon">&#127967;</span>
+          <span>The Courtyard Fig</span>
+          <span style="margin-left:auto; font-size:12px; color:var(--text-muted);">Est. 2 years</span>
+        </div>
+        <img src="images/courtyard-fig.jpg" alt="Quiet cobblestone courtyard garden behind an artisanal cafe, leafy mature fig tree spreading shade across timber cafe tables, patrons quietly reading books with steaming ceramic mugs, soft gentle morning light and warm earthy tones." width="900" height="600">
+        <p class="court-quote">&ldquo;Named after the courtyard tree that keeps the morning sun gentle.&rdquo;</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-brand">Fig &amp; Filter</span>
+    <span class="footer-tagline">Roasted here. Baked here. Poured for you.</span>
+    <div class="footer-div" aria-hidden="true"></div>
+
+    <div class="footer-block">
+      <span class="foot-label">Hours</span>
+      <p>Tuesday &ndash; Sunday: 7:30am &ndash; 5:00pm</p>
+      <p>Monday: Closed</p>
+    </div>
+    <div class="footer-block">
+      <span class="foot-label">Location &amp; Contact</span>
+      <p>8 Chalk Lane</p>
+      <p><a href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></p>
+    </div>
+
+    <div class="footer-block footer-catering">
+      <a href="catering.html" class="btn-footer">Order catering</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('mobile-nav');
+  var overlay = document.getElementById('nav-overlay');
+  var close = document.querySelector('.close-nav');
+  var links = nav.querySelectorAll('a');
+  function openNav(){
+    btn.setAttribute('aria-expanded','true');
+    nav.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeNav(){
+    btn.setAttribute('aria-expanded','false');
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  btn.addEventListener('click', openNav);
+  close.addEventListener('click', closeNav);
+  overlay.addEventListener('click', closeNav);
+  links.forEach(function(link){ link.addEventListener('click', closeNav); });
+})();
+</script>
+</body>
+</html>

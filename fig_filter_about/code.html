@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Fig &amp; Filter</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#98a66f", "on-surface": "#1e1b1c", "on-secondary-container": "#755100", "bg-canvas": "#FAF6F0", "tertiary-fixed": "#dbe9ac", "surface-dim": "#e1d8d9", "secondary-fixed-dim": "#f5bd58", "outline": "#7e747c", "surface-variant": "#e9e0e1", "on-tertiary-fixed": "#161f00", "on-secondary": "#ffffff", "on-background": "#1e1b1c", "surface-container-low": "#fbf1f2", "inverse-on-surface": "#f8eeef", "primary-fixed-dim": "#e3b9e3", "background": "#fff8f8", "primary": "#331736", "surface-tint": "#755377", "primary-fixed": "#ffd6fe", "error-container": "#ffdad6", "tertiary-fixed-dim": "#bfcd92", "secondary-fixed": "#ffdeaa", "surface-container-lowest": "#ffffff", "inverse-primary": "#e3b9e3", "error": "#ba1a1a", "inverse-surface": "#342f30", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-error": "#ffffff", "surface-container": "#f5eced", "surface-container-highest": "#e9e0e1", "secondary": "#7d5700", "primary-container": "#4a2c4d", "on-primary": "#ffffff", "accent-amber-subtle": "#F7EBD3", "on-surface-variant": "#4d444b", "tertiary-container": "#303b0f", "on-secondary-fixed-variant": "#5f4100", "on-tertiary-fixed-variant": "#404b1e", "on-primary-fixed-variant": "#5b3c5e", "surface-container-high": "#efe6e7", "on-secondary-fixed": "#271900", "outline-variant": "#cfc3cc", "surface-card": "#FFFFFF", "surface-bright": "#fff8f8", "surface": "#fff8f8", "on-primary-container": "#ba94bb", "text-muted": "#6E6663", "secondary-container": "#ffc55f", "border-subtle": "#E5DCce", "tertiary": "#1b2500", "on-primary-fixed": "#2c1030" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "space-2xl": "4rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "label-md": ["DM Sans"], "body-md": ["DM Sans"], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "body-lg": ["DM Sans"], "label-sm": ["DM Sans"], "body-sm": ["DM Sans"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "700" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-canvas text-on-surface font-body-md text-body-md min-h-full flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-bg-canvas/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(74,44,77,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Fig &amp; Filter Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrCka-gPDob2wStrOil26Wo4XHZBTcGHXW10g8q1OTlVItECJfZZM_neAQJfg071gwabVqg3c3Yh1gzB3xs55ZEnIfHpoR94CFWsOtLx3K-0TWi3Wyc2ZgWHb6lfbD6s4rzKfayWwX7ixr2F_M7f4XA7b8OCvlnuvtqLsADGuaQLxCUmoR1u-Y7hYaW6GTkKCQzupv8h1hmAMiytWsjmG8oVI-Y4aHO0GMS97tsMDQog"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary-container truncate tracking-tight">Fig &amp; Filter</span><span class="font-label-sm text-label-sm text-text-muted truncate">About</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-bg-canvas pt-16 pb-28"><div class="flex flex-col w-full">
+<div class="w-full max-w-xl mx-auto px-margin pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Warm Welcoming Intro Badge -->
+<div class="flex items-center gap-space-sm self-start bg-accent-amber-subtle/80 px-3 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Behind The Counter</span>
+</div>
+<!-- Editorial Story Header -->
+<section class="flex flex-col gap-space-sm">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight font-serif">
+        We built this for our neighbours.
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed pt-space-xs">
+        Two years ago, in an old picture-framing shop on Chalk Lane, Fig &amp; Filter opened its doors. Named after the mature fig tree shading our courtyard and the daily craft of filter coffee, we wanted a place that roasts its own beans and bakes everything from scratch right here.
+      </p>
+</section>
+<!-- Tactile Courtyard Fig Tree Moment (Rich Visual Card) -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-card shadow-sm">
+<img class="w-full h-56 object-cover" data-alt="Sunlight filtering through the lush broad green leaves of a mature fig tree in an intimate brick-paved café courtyard at 8 Chalk Lane. Warm morning lighting with amber sunbeams, rustic timber benches, natural tactile Mediterranean aesthetic, rich plum and deep purple shadows, quiet neighbourhood morning feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAire1A3S3ZnowoUaLKMwf32-dRHutFpMjwWkZdl6D9AaHVpMVhavSpyIHaaVYSD4jFxcrnQMJ5aSgxK_ukW1bxOyfxaOvJldB2S2Jg8nkJyIv0KDeIwZTHG5tp9I7Rv68ATU-EWuOkbMjlwAwO3kNnPJPcwOy7K9eJBtSWj279b8zD_WHP7LvWEvklWuWYKzKu1C2OlxGky49v1h7QFEDQoUb8gnWeLMXoXTlmpdk"/>
+<div class="p-space-md bg-surface-container-low/70 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm italic">
+<span class="material-symbols-outlined text-[18px] text-secondary">park</span>
+<span>The 40-year-old courtyard fig tree at No. 8 Chalk Lane</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary px-2 py-0.5 rounded bg-accent-amber-subtle">Est. 2022</span>
+</div>
+</div>
+<!-- Interactive Human Switcher (People, Not a Business) -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">The Hands &amp; Hearts</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Meet the Founders</h2>
+</div>
+<div class="flex gap-1.5 p-1 bg-surface-container rounded-full text-label-sm font-label-sm">
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary shadow-sm transition-all duration-200" id="tab-mara" onclick="showProfile('mara')">
+            Mara
+          </button>
+<button class="px-3 py-1 rounded-full text-on-surface hover:text-primary transition-all duration-200" id="tab-dev" onclick="showProfile('dev')">
+            Dev
+          </button>
+</div>
+</div>
+<!-- Founder 1: Mara -->
+<article class="flex flex-col bg-surface-card rounded-xl overflow-hidden shadow-sm transition-all duration-300" id="profile-mara">
+<div class="relative">
+<img class="w-full h-72 object-cover object-top" data-alt="Intimate portrait of Mara, an artisan pastry chef in a natural linen apron dust-flecked with organic flour. She stands in a sunlit warm café kitchen beside fresh golden sourdough croissants and seasonal fig tarts. Natural candid smile, warm earthy lighting, amber accents, deep fig shadows, authentic artisanal tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkNrYUoOaZ10OpKDWyE_yqqj4Z66obaHslQslhzVuGUm86WZSp9suD_N8c8d5Bpoh5XWLggqptDV9udcB_oku49s15NWRx5WjEo-_eNR-9OzvH-8hTypzgJ4duS56ZYk7e5c48G4xahKGWUvCcK5g4U5JHc6ckwVRLqdeb8R1gamjEDBCVv_CuOut4sem7CvliJCtolFrGv1K2ifcxv2szwNSa-3YJAAWmqE2GjlU"/>
+<div class="absolute bottom-3 left-3 bg-surface-card/95 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Kitchen starts at 05:40 AM</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-md text-headline-md text-primary">Mara Valenti</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Head Baker &amp; Kitchen</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Runs the kitchen, bakes from 5:40 every morning. Sourdough pastries, flaky croissants, seasonal tarts, and comforting all-day breakfast plates made fresh daily.
+          </p>
+<!-- Tactile Delight: Mara's Daily Prep Routine -->
+<div class="mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-text-muted">Mara's morning lineup</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded bg-accent-amber-subtle text-secondary">Warm Fig Danish</span>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded bg-accent-amber-subtle text-secondary">Cardamom Knot</span>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded bg-accent-amber-subtle text-secondary">Wild Herb Sourdough</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Founder 2: Dev -->
+<article class="hidden flex-col bg-surface-card rounded-xl overflow-hidden shadow-sm transition-all duration-300" id="profile-dev">
+<div class="relative">
+<img class="w-full h-72 object-cover object-top" data-alt="Intimate portrait of Dev, a master specialty coffee roaster inspecting fresh lightly roasted coffee beans in his cupping spoon beside an artisan vintage small-batch roaster. Warm morning coffee bar interior, atmospheric golden light, rich fig purple tones, clean artisanal aesthetic, genuine warm expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDes9xRwZy-7dqVqt6kchUXQo-CKppMeMIH6FcXi40zXjUe1Xg2vks1_hCEEyMjF7jgW7YKrkBg8Wp3wZe3TiE554pdEkbmvecDraVbqHqPmSzQ7ka8PcvBTi2HOFtWIn8paxPxki1L6waanA7hhniXG6MGNB7_sEUxs2ZRZ8uWHd6OElWLAlhalbUOw8TAtI6MGfk9oHccno5Na09iCBrCPAKDPItLQAkk1O5rw7Q"/>
+<div class="absolute bottom-3 left-3 bg-surface-card/95 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Roasts Tue &amp; Thu mornings</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-md text-headline-md text-primary">Devlin “Dev” Vance</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Roaster &amp; Barista</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Roasts twice a week on the machine behind the counter. Obsessed with clean extraction, sourcing ethical beans, and dialing in our espresso profiles.
+          </p>
+<!-- Tactile Delight: Dev's Cupping Notes -->
+<div class="mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-text-muted">Currently dialed in</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded bg-accent-amber-subtle text-secondary">Guatemala Washed</span>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded bg-accent-amber-subtle text-secondary">Ethiopia Natural</span>
+<span class="text-label-sm font-label-sm px-2.5 py-1 rounded bg-accent-amber-subtle text-secondary">House Fig Blend</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Roasting Schedule Note (Visual Delight with Sensory Card) -->
+<section class="bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-accent-amber-subtle flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[26px]">coffee_maker</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">On The Drum</span>
+<h3 class="font-headline-md text-headline-md text-primary">Our Roasting Schedule</h3>
+</div>
+</div>
+<div class="bg-surface-container-low/70 p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule</span>
+<span>Tuesdays &amp; Thursdays • 8:00 AM – 11:30 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed pt-space-xs">
+          “We roast in small batches behind the counter every Tuesday and Thursday morning. If you come by before noon, you’ll smell the caramel and toasted hazelnut notes floating through the lane.”
+        </p>
+</div>
+<!-- Sensory micro-meter -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-text-muted">
+<span>Batch profile</span>
+<span class="text-primary font-semibold">Light-Medium • Clean Extraction</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-dim" style="width: 25%"></div>
+<div class="h-full bg-secondary" style="width: 50%"></div>
+<div class="h-full bg-primary-container" style="width: 25%"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-text-muted">
+<span>Sweet Hazelnut</span>
+<span>Fig Jam</span>
+<span>Cacao Nibs</span>
+</div>
+</div>
+</section>
+<!-- Warm Quote Callout -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col items-center text-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">format_quote</span>
+<p class="font-headline-sm text-headline-sm text-primary font-serif italic max-w-xs">
+        “No conveyor belts. No frozen pastries. Just good coffee, hot ovens, and genuine people.”
+      </p>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">— Mara &amp; Dev</span>
+</div>
+<!-- The EXACTLY ONE Primary Call To Action Button -->
+<div class="flex flex-col items-center justify-center gap-space-md pt-space-xs pb-space-sm">
+<a class="w-full min-h-[50px] flex items-center justify-center gap-space-xs bg-primary-container text-bg-canvas font-label-md text-label-md rounded px-space-lg py-3 shadow-md hover:bg-primary transition-all duration-200 active:scale-[0.99]" data-path="visit" href="#">
+<span>Find us</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Plain Secondary Link (No compete) -->
+<a class="font-body-md text-body-md text-on-surface underline decoration-secondary decoration-1 underline-offset-4 hover:text-primary transition-colors" data-path="menu" href="#">
+        Browse today's bakes &amp; pour menu
+      </a>
+</div>
+</div>
+<script>
+    function showProfile(person) {
+      const maraEl = document.getElementById('profile-mara');
+      const devEl = document.getElementById('profile-dev');
+      const maraTab = document.getElementById('tab-mara');
+      const devTab = document.getElementById('tab-dev');
+
+      if (!maraEl || !devEl || !maraTab || !devTab) return;
+
+      if (person === 'mara') {
+        maraEl.classList.remove('hidden');
+        devEl.classList.add('hidden');
+        maraTab.className = 'px-3 py-1 rounded-full bg-primary-container text-on-primary shadow-sm transition-all duration-200';
+        devTab.className = 'px-3 py-1 rounded-full text-on-surface hover:text-primary transition-all duration-200';
+      } else {
+        devEl.classList.remove('hidden');
+        maraEl.classList.add('hidden');
+        devTab.className = 'px-3 py-1 rounded-full bg-primary-container text-on-primary shadow-sm transition-all duration-200';
+        maraTab.className = 'px-3 py-1 rounded-full text-on-surface hover:text-primary transition-all duration-200';
+      }
+    }
+  </script>
+</div><footer class="w-full bg-primary-container text-on-primary px-margin py-space-xl mt-space-2xl"><div class="max-w-md mx-auto flex flex-col items-center text-center"><span class="font-headline-md text-headline-md text-secondary-fixed mb-space-xs">Fig &amp; Filter</span><p class="font-body-sm text-body-sm text-primary-fixed-dim italic mb-space-lg">Roasted here. Baked here. Poured for you.</p><div class="w-12 h-0.5 bg-secondary-fixed-dim/30 mb-space-lg rounded-full"></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Hours</p><p class="font-body-sm text-body-sm text-surface-container-low">Tuesday – Sunday: 7:30am – 5:00pm</p><p class="font-body-sm text-body-sm text-on-primary-container">Monday: Closed</p></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Location &amp; Contact</p><p class="font-body-sm text-body-sm text-surface-container-low">8 Chalk Lane</p><a class="inline-block font-body-sm text-body-sm text-secondary-fixed hover:underline" href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></div><div class="pt-space-xs"><a class="inline-flex items-center justify-center min-h-[44px] px-space-lg py-space-sm bg-secondary text-on-secondary font-label-md text-label-md rounded shadow-sm hover:bg-on-secondary-container transition-colors" data-path="catering" href="#">Order catering</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-bg-canvas/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(74,44,77,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="catering" href="#"><span class="material-symbols-outlined text-[20px]">bakery_dining</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Catering</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">About</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="visit" href="#"><span class="material-symbols-outlined text-[20px]">distance</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Visit</span></a></div></nav></body></html>

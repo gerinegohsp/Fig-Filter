@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Fig &amp; Filter</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#98a66f", "on-surface": "#1e1b1c", "on-secondary-container": "#755100", "bg-canvas": "#FAF6F0", "tertiary-fixed": "#dbe9ac", "surface-dim": "#e1d8d9", "secondary-fixed-dim": "#f5bd58", "outline": "#7e747c", "surface-variant": "#e9e0e1", "on-tertiary-fixed": "#161f00", "on-secondary": "#ffffff", "on-background": "#1e1b1c", "surface-container-low": "#fbf1f2", "inverse-on-surface": "#f8eeef", "primary-fixed-dim": "#e3b9e3", "background": "#fff8f8", "primary": "#331736", "surface-tint": "#755377", "primary-fixed": "#ffd6fe", "error-container": "#ffdad6", "tertiary-fixed-dim": "#bfcd92", "secondary-fixed": "#ffdeaa", "surface-container-lowest": "#ffffff", "inverse-primary": "#e3b9e3", "error": "#ba1a1a", "inverse-surface": "#342f30", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-error": "#ffffff", "surface-container": "#f5eced", "surface-container-highest": "#e9e0e1", "secondary": "#7d5700", "primary-container": "#4a2c4d", "on-primary": "#ffffff", "accent-amber-subtle": "#F7EBD3", "on-surface-variant": "#4d444b", "tertiary-container": "#303b0f", "on-secondary-fixed-variant": "#5f4100", "on-tertiary-fixed-variant": "#404b1e", "on-primary-fixed-variant": "#5b3c5e", "surface-container-high": "#efe6e7", "on-secondary-fixed": "#271900", "outline-variant": "#cfc3cc", "surface-card": "#FFFFFF", "surface-bright": "#fff8f8", "surface": "#fff8f8", "on-primary-container": "#ba94bb", "text-muted": "#6E6663", "secondary-container": "#ffc55f", "border-subtle": "#E5DCce", "tertiary": "#1b2500", "on-primary-fixed": "#2c1030" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2.5rem", "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "space-2xl": "4rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Playfair Display"], "label-md": ["DM Sans"], "body-md": ["DM Sans"], "headline-lg": ["Playfair Display"], "headline-xl": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "body-lg": ["DM Sans"], "label-sm": ["DM Sans"], "body-sm": ["DM Sans"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "700" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } }</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-canvas text-on-surface font-body-md text-body-md min-h-full flex flex-col antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-bg-canvas/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(74,44,77,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Fig &amp; Filter Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrCka-gPDob2wStrOil26Wo4XHZBTcGHXW10g8q1OTlVItECJfZZM_neAQJfg071gwabVqg3c3Yh1gzB3xs55ZEnIfHpoR94CFWsOtLx3K-0TWi3Wyc2ZgWHb6lfbD6s4rzKfayWwX7ixr2F_M7f4XA7b8OCvlnuvtqLsADGuaQLxCUmoR1u-Y7hYaW6GTkKCQzupv8h1hmAMiytWsjmG8oVI-Y4aHO0GMS97tsMDQog"/><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary-container truncate tracking-tight">Fig &amp; Filter</span><span class="font-label-sm text-label-sm text-text-muted truncate">Menu</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-bg-canvas pt-16 pb-28"><div class="flex flex-col w-full">
+<div class="w-full max-w-xl mx-auto px-margin">
+<!-- Hero / Intro Note -->
+<header class="py-space-md text-left">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-accent-amber-subtle text-on-secondary-container mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_fire_department</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Roasted &amp; Baked Daily</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container tracking-tight mb-space-xs">
+        Today’s Board
+      </h1>
+<p class="font-body-md text-body-md text-text-muted">
+        Everything made by hand right here at 8 Chalk Lane. Find what sounds good, then come on down.
+      </p>
+<!-- Dietary Badge Legend -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container-low flex flex-wrap items-center gap-x-4 gap-y-2">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Dietary Key:</span>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[11px] font-bold">V</span>
+<span class="font-body-sm text-body-sm text-on-surface">Vegetarian</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[11px] font-bold">VG</span>
+<span class="font-body-sm text-body-sm text-on-surface">Vegan</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[11px] font-bold">GF</span>
+<span class="font-body-sm text-body-sm text-on-surface">Gluten-Free</span>
+</div>
+</div>
+</header>
+<!-- The 4 Menu Sections Stacked in a Single Clean Column -->
+<div class="space-y-space-lg mt-space-sm">
+<!-- 1. COFFEE -->
+<section class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">coffee</span>
+<h2 class="font-headline-md text-headline-md text-primary-container">1. Coffee</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-accent-amber-subtle px-2 py-0.5 rounded">House Roasted</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md italic">
+          Batch-roasted twice weekly on our countertop roaster behind the register. Oat, almond, and soy milks available.
+        </p>
+<ul class="space-y-space-md">
+<!-- Espresso -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Espresso</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">VG</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Double shot of our seasonal house single-origin.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$3.50</span>
+</li>
+<!-- Long Black -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Long Black</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">VG</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Hot water topped with clean crema.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$4.00</span>
+</li>
+<!-- Flat White / Latte / Cappuccino -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Flat White / Latte / Cappuccino</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Steamed microfoam with whole dairy or house-made oat.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$4.50</span>
+</li>
+<!-- Filter / Batch Brew -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Filter / Batch Brew</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">VG</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Slow-drip filtered, rotated every morning.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$4.50</span>
+</li>
+<!-- Iced Latte -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Iced Latte</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Double espresso over block ice and cold milk.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$6.00</span>
+</li>
+</ul>
+</section>
+<!-- 2. NOT COFFEE -->
+<section class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">emoji_food_beverage</span>
+<h2 class="font-headline-md text-headline-md text-primary-container">2. Not Coffee</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Steeped &amp; Pressed</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md italic">
+          Carefully sourced loose leaves, whole crushed spices, and cold-pressed fruit.
+        </p>
+<ul class="space-y-space-md">
+<!-- Teas -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Teas</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">VG</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">English Breakfast, Earl Grey, or Jasmine Green in a warm ceramic pot.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$4.50</span>
+</li>
+<!-- House Sticky Spiced Chai -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">House Sticky Spiced Chai</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Simmered whole spices coated in raw honey with textured milk.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$5.50</span>
+</li>
+<!-- Fresh Pressed Juices -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Fresh Pressed Juices</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">VG</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Seasonal Orange or crisp Apple Ginger pressed to order.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$6.00</span>
+</li>
+</ul>
+</section>
+<!-- EXACTLY ONE PHOTOGRAPH: Pastoral Table Spread -->
+<figure class="relative rounded-xl overflow-hidden shadow-sm">
+<img alt="Freshly baked morning pastries and freshly poured coffee on a rustic wooden cafe table" class="w-full h-56 object-cover" data-alt="A warm, appetizing close-up of flaky golden pastries and freshly poured coffee in rustic stoneware cups on a weathered wooden cafe table. Soft morning sunlight streams across the scene, highlighting crumbs, textured linen, and deep purple fig accents. Editorial cafe photography, rich tactile depth, artisanal mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeYMJrXf_-bnoO3g1aPxMHp9e6c7710jjJFlqncnV1qOXoXqtj8sb2vjCupikPBhqHOnBygbfSeh8tWPto8r6zSH6FYoTheyx79W4AfCMmnBpRK_uLOf6pn4RyquncSVZIfyneMeVq_DfVyWNQDns67XA8XQcyd6fohN1gR2i3ZgEWp0xzA3C3Q9iZn62xNE-d8SFaj8gfZR_GX3qgmI1rykxxf6OJg_mrfVKnVT4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<figcaption class="absolute bottom-3 left-3 right-3 text-on-primary">
+<p class="font-headline-sm text-headline-sm text-secondary-fixed">Baked at dawn. Poured fresh.</p>
+<p class="font-body-sm text-[13px] text-surface-container-low opacity-90">Mara bakes from 5:40am every morning.</p>
+</figcaption>
+</figure>
+<!-- 3. ALL-DAY KITCHEN -->
+<section class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">skillet</span>
+<h2 class="font-headline-md text-headline-md text-primary-container">3. All-Day Kitchen</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Till 3:30pm</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md italic">
+          Hearty plates, slow sourdough, and garden greens prepared fresh on order.
+        </p>
+<ul class="space-y-space-md">
+<!-- Sourdough Toast with Butter & House Fig Jam -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Sourdough Toast with Butter &amp; House Fig Jam</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Thick-cut country sourdough, cultured butter, and courtyard fig preserve.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$8.00</span>
+</li>
+<!-- Poached Eggs on Seeded Toast with Greens -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Poached Eggs on Seeded Toast with Greens</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF option</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Two organic eggs, dressed tender herbs, lemon oil, toasted seeds.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$14.00</span>
+</li>
+<!-- Roasted Wild Mushrooms on Toast -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Roasted Wild Mushrooms on Toast</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">VG</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Pan-roasted forest mushrooms, thyme, confit garlic, toasted rustic loaf.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$17.50</span>
+</li>
+<!-- Fig & Filter Big Breakfast -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Fig &amp; Filter Big Breakfast</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Eggs cooked to order, homemade fennel sausage, blistered vine tomatoes, sourdough, and bitter greens.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$22.00</span>
+</li>
+</ul>
+</section>
+<!-- 4. BAKERY -->
+<section class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">bakery_dining</span>
+<h2 class="font-headline-md text-headline-md text-primary-container">4. Bakery</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-accent-amber-subtle px-2 py-0.5 rounded">Baked Fresh Daily</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-md italic">
+          Baked fresh on site each morning by Mara. Served warm straight from the oven trays.
+        </p>
+<ul class="space-y-space-md">
+<!-- Butter Croissant -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Butter Croissant</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Laminated Normandy butter pastry, crisp exterior, light honeycomb crumb.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$4.50</span>
+</li>
+<!-- Fig & Almond Danish -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Fig &amp; Almond Danish</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Frangipane almond cream, fresh halved figs, and golden toasted flaked almonds.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$5.50</span>
+</li>
+<!-- Cardamom Morning Bun -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Cardamom Morning Bun</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Twisted spiced dough rolled in aromatic crushed green cardamom and raw sugar.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$5.00</span>
+</li>
+<!-- Toasted Banana Bread with Whipped Espresso Butter -->
+<li class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Toasted Banana Bread</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">V</span>
+<span class="inline-flex items-center justify-center px-1.5 py-0.5 rounded bg-accent-amber-subtle text-secondary font-label-sm text-[10px]">GF</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Caramelized banana slice topped with our house-whipped espresso butter.</p>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-semibold whitespace-nowrap">$6.50</span>
+</li>
+</ul>
+</section>
+</div>
+<!-- Friendly Walk-In Note -->
+<div class="my-space-xl p-space-md rounded-xl bg-surface-container-low text-center">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-1">storefront</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-1">No reservations, no waiting lines.</h3>
+<p class="font-body-sm text-body-sm text-text-muted mb-space-sm">
+        We keep things simple: order at the counter, pick a seat inside or under the fig tree in the courtyard.
+      </p>
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Tuesday – Sunday · 7:30am – 5:00pm</span>
+</div>
+</div>
+<!-- The EXACTLY ONE Primary Call to Action on this page: "Find us" button pointing to Visit -->
+<div class="pt-space-xs pb-space-lg flex flex-col items-center text-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center min-h-[48px] px-space-xl py-space-sm bg-primary-container text-bg-canvas font-label-md text-label-md rounded shadow-sm hover:bg-primary active:scale-[0.99] transition-all" data-path="visit" href="#">
+<span class="material-symbols-outlined text-[18px] mr-2">near_me</span>
+        Find us
+      </a>
+<p class="font-body-sm text-body-sm text-text-muted mt-space-sm">
+        8 Chalk Lane · Corner of Weaver Street
+      </p>
+</div>
+</div>
+</div><footer class="w-full bg-primary-container text-on-primary px-margin py-space-xl mt-space-2xl"><div class="max-w-md mx-auto flex flex-col items-center text-center"><span class="font-headline-md text-headline-md text-secondary-fixed mb-space-xs">Fig &amp; Filter</span><p class="font-body-sm text-body-sm text-primary-fixed-dim italic mb-space-lg">Roasted here. Baked here. Poured for you.</p><div class="w-12 h-0.5 bg-secondary-fixed-dim/30 mb-space-lg rounded-full"></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Hours</p><p class="font-body-sm text-body-sm text-surface-container-low">Tuesday – Sunday: 7:30am – 5:00pm</p><p class="font-body-sm text-body-sm text-on-primary-container">Monday: Closed</p></div><div class="space-y-space-xs mb-space-lg"><p class="font-label-md text-label-md text-secondary-fixed">Location &amp; Contact</p><p class="font-body-sm text-body-sm text-surface-container-low">8 Chalk Lane</p><a class="inline-block font-body-sm text-body-sm text-secondary-fixed hover:underline" href="mailto:hello@figandfilter.com">hello@figandfilter.com</a></div><div class="pt-space-xs"><a class="inline-flex items-center justify-center min-h-[44px] px-space-lg py-space-sm bg-secondary text-on-secondary font-label-md text-label-md rounded shadow-sm hover:bg-on-secondary-container transition-colors" data-path="catering" href="#">Order catering</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-bg-canvas/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(74,44,77,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] transition-colors text-primary-container font-semibold" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="catering" href="#"><span class="material-symbols-outlined text-[20px]">bakery_dining</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Catering</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">About</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[44px] min-h-[44px] text-text-muted hover:text-primary-container transition-colors" data-path="visit" href="#"><span class="material-symbols-outlined text-[20px]">distance</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Visit</span></a></div></nav></body></html>
